@@ -7,7 +7,7 @@ function s1() {
 
 
 
-function s2() {
+function s3() {
     h5gg.editAll('4397530849764387586', 'I64');
     
 
@@ -16,7 +16,7 @@ function s2() {
 
 
 
-function s3() {
+function s2() {
     h5gg.editAll('4397530849758414897', 'I64');
     
 
