@@ -1,0 +1,202 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+#cheatMenu {
+    background-color: #222;
+    padding: 15px;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 10px;
+    width: 250px;
+    position: relative;
+}
+
+#cheatMenu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#cheatMenu ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.function-name {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: .4s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s;
+    left: 2px;
+    bottom: 2px;
+}
+
+input:checked + .slider {
+    background-color: #28a745;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+#toggleSubMenu {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#toggleSubMenu:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#toggleSubMenu:active {
+    background-color: #004494;
+    transform: scale(0.95);
+}
+
+#subMenu {
+background-color: #333;
+color: white;
+padding: 10px;
+border: 1px solid #555;
+border-radius: 10px;
+position: absolute;
+width: 260x; /* Đặt độ rộng bằng với #cheatMenu */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+display: none;
+
+}
+
+#subMenu {
+background-color: #333;
+color: white;
+padding: 10px;
+border: 1px solid #555;
+border-radius: 10px;
+position: absolute;
+width: 250px; /* Đặt độ rộng bằng với #cheatMenu */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+display: none;
+transition: transform 0.3s ease;
+}
+
+#subMenu {
+background-color: #333;
+color: white;
+padding: 10px;
+border: 1px solid #555;
+border-radius: 10px;
+position: absolute;
+width: 260px; /* Đặt độ rộng lớn hơn */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+display: none;
+transition: transform 0.3s ease;
+}
+
+#subSubMenu {
+background-color: #444;
+border: 1px solid #666;
+width: 260px; /* Đặt độ rộng bằng với #subMenu */
+}
+
+#profile {
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+text-align: center; /* Căn giữa chữ */
+}
+
+#profile img {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+margin-right: 10px;
+}
+
+#profile div {
+text-align: center; /* Căn giữa chữ */
+}
+
+#profile h4, #profile h5 {
+margin: 5px 0; /* Thay đổi khoảng cách giữa các dòng chữ */
+font-size: 13px; /* Kích thước chữ nhỏ hơn 1px */
+}
+#updateProfileButton {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#updateProfileButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#updateProfileButton:active {
+    background-color: #004494;
+    transform: scale(0.95);
+}
