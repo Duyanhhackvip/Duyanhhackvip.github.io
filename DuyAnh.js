@@ -111,7 +111,7 @@ audio.addEventListener('ended', function() {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 document.getElementById('contactButton').addEventListener('click', function() {
-    window.location.href = 'https://t.me/cheatioscrack'; // Thay đổi địa chỉ email nếu cần
+    window.location.href = 'https://zalo.me/0792432380'; // Thay đổi địa chỉ email nếu cần
 });
 
 
