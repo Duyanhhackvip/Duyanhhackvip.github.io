@@ -39,7 +39,7 @@
     });
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+    let song = 'someValue'; // hoặc var song, const song
     songSelect.addEventListener('change', function() {
         const selectedSong = songSelect.value;
         const songs = [
