@@ -72,8 +72,7 @@ let isPlaying = false;
 
 // Chọn nhạc
 songSelect.addEventListener('change', function() {
-    if (this.value !== "") {
-        audio.src = songs[this.value];
+    if (this.value !== "") 
         audio.play();
         isPlaying = true;
         playMusicButton.checked = true; // Đảm bảo rằng nút bật nhạc được chọn
