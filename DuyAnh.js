@@ -12,7 +12,7 @@
     document.getElementById('loginButton').addEventListener('click', function() {
     var password = document.getElementById('passwordInput').value;
     var cheatMenu = document.getElementById('cheatMenu');
-    var correctPassword = 'DuyAnh2010'; // Thay đổi thành mật khẩu của bạn
+    var correctPassword = 'Duyanh'; // Thay đổi thành mật khẩu của bạn
 
     if (password === correctPassword) {
         cheatMenu.style.display = 'block';
@@ -39,7 +39,7 @@
     });
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    let song = 'someValue'; // hoặc var song, const song
+
     songSelect.addEventListener('change', function() {
         const selectedSong = songSelect.value;
         const songs = [
@@ -72,7 +72,8 @@ let isPlaying = false;
 
 // Chọn nhạc
 songSelect.addEventListener('change', function() {
-    if (this.value !== "") 
+    if (this.value !== "") {
+        audio.src = songs[this.value];
         audio.play();
         isPlaying = true;
         playMusicButton.checked = true; // Đảm bảo rằng nút bật nhạc được chọn
